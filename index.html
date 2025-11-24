@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="brand">Premkumar</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+            <img src="images/images.png" alt="Toggle theme" id="themeIcon">
+        </button>
+    </nav>
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="eyebrow">Computer Science and Design</p>
+                <h1>Hi, I am Premkumar</h1>
+                <p>Mainly into Java, DSA and building usable products that feel simple.</p>
+                <div class="hero-actions">
+                    <a href="#projects">View Work</a>
+                    <a href="#contact" class="ghost">Reach Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="images/create a pixel art i.png" alt="Portrait">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p>About</p>
+                <h2>Student who likes mixing logic with visuals</h2>
+            </div>
+            <div class="about-grid">
+                <article>
+                    <h3>Focus</h3>
+                    <p>Balancing design sense with algorithmic thinking so the things I build are both fast and friendly.</p>
+                </article>
+                <article>
+                    <h3>Stack</h3>
+                    <p>Java, basics of web, version control and a habit of sketching flows before I code.</p>
+                </article>
+                <article>
+                    <h3>Goal</h3>
+                    <p>Intern where I can ship small tools, learn from teammates and keep sharpening DSA.</p>
+                </article>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p>Projects</p>
+                <h2>Recent work that made me curious</h2>
+            </div>
+            <div class="project-grid">
+                <article class="card">
+                    <img src="images/download.jpg" alt="Depression Detection">
+                    <div>
+                        <h3>Depression Detection</h3>
+                        <p>Explored sentiment cues and basic ML models to flag signs early.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/URL.png" alt="URL Shortener">
+                    <div>
+                        <h3>URL Shortener</h3>
+                        <p>Built a compact service for sharing links faster with auto analytics.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="images/unnamed.png" alt="Bank Management">
+                    <div>
+                        <h3>Bank Management</h3>
+                        <p>Console first system that tracks accounts and transactions safely.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p>Skills</p>
+                <h2>What I use day to day</h2>
+            </div>
+            <div class="skills-grid">
+                <span>Java</span>
+                <span>DSA</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Git</span>
+                <span>Figma basics</span>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="section-heading">
+                <p>Contact</p>
+                <h2>Let’s build something</h2>
+            </div>
+            <form id="contactForm" class="contact-form" novalidate>
+                <label>
+                    Name
+                    <input type="text" id="name" name="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" id="email" name="email" required>
+                </label>
+                <label>
+                    Message
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </label>
+                <p class="error" id="formError"></p>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
