@@ -27,7 +27,7 @@ form.addEventListener('submit', e => {
     const email = form.email.value.trim();
     const message = form.message.value.trim();
     const emailOk = /^[\w-.]+@([\w-]+\.)+[\w-]{2,}$/i.test(email);
-    if (name.length < 2) {
+    if (name.length < 2) {``
         error.textContent = 'Please enter your name.';
         return;
     }
